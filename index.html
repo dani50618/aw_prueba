@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/B6E23DAF-46F5-4C4A-B960-5BA5046D8889/main.js" charset="UTF-8"></script><script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+    <body>
+
+        <header>
+           
+           <div id="logo"></div>
+           <h1 id="empresa">BAR MONOLO</h1>
+           
+           <div id="reloj"> 
+           <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=small&timezone=Europe%2FMadrid"  frameborder="0" seamless></iframe> </div>
+            
+        </header>
+        
+        <main> 
+           
+            <section class="menu">
+             
+              <button id="cafe" onclick="boton('Cafe ', 1.50)"><div id="capa"><hr class="arriba"></hr><h2>Cafe 1,50€</h2><hr class="abajo"></hr></div></button>
+              
+               <button id="agua" onclick="boton('Agua ', 1.00)"><div id="capa1"><hr class="arriba"></hr><h2>Agua 1€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="bebidas" onclick="boton('Bebida ', 2.50)"><div id="capa2"><hr class="arriba"></hr><h2 class="grande">Bebidas 2,50€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="tostada" onclick="boton('Tostada ', 3.50)"><div id="capa3"><hr class="arriba"></hr><h2>Tostada 3,50€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="postre" onclick="boton('Postre ', 4.00)"><div id="capa4"><hr class="arriba"></hr><h2>Postre 4€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="ensalada" onclick="boton('Ensalada ', 5.00)"><div id="capa5"><hr class="arriba"></hr><h2>Ensalada 5€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="hamburguesa" onclick="boton('Hamburguesa ', 15.00)"><div id="capa6"><hr class="arriba"></hr><h2 class="grande">Hamburguesa 15€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="pizza" onclick="boton('Pizza ', 12.00)"><div id="capa7"><hr class="arriba"></hr><h2>Pizza 12€</h2><hr class="abajo"></hr></div></button>
+               
+               <button id="sushi" onclick="boton('Sushi ', 20.00)"><div id="capa8"><hr class="arriba"></hr><h2>Sushi 20€</h2><hr class="abajo"></hr></div></button>
+               
+
+           </section>
+           
+            <div id="cajita">
+            	 
+            	<div id="dp1">0</div>	
+
+            	  <br>
+      			    <button class=d1 type="button" onClick="boton2('1')">1
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('2')">2
+      			    	
+      			    </button> 
+      			    <button class=d1 type="button" onClick="boton2('3')">3
+
+      			    	
+      			    </button> 
+      			    <br>
+      			    <button class=d1 type="button" onClick="boton2('4')">4
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('5')">5
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('6')">6
+      			    	
+      			    </button>
+      			    <br>
+      			    <button class=d1 type="button" onClick="boton2('7')">7
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('8')">8
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('9')">9
+      			    	
+      			    </button>  
+
+      			     <br>
+      			    <button class=d1 type="button" onClick="resta()">-
+      			    	
+      			    </button>
+      			    <button class=d1 type="button" onClick="boton2('0')">0
+      			    	
+      			    </button> 
+      			    <button class=d1 type="button" onClick="operacion()">Enter
+
+      			    	
+      			    </button> 
+
+       		</div>
+                                    
+        </main>
+        
+        <aside>
+           
+           <h4 id="compra"></h4>
+
+           <div id="total">
+              
+              <h1>TOTAL:</h1>
+              <h2 id="precio"></h2>
+               
+           </div>
+        </aside> 
+    </body>
+</html>
